@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interdes Games</title>
+    
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#games">Games</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+    
+    
+    <style>
+        
+        body {
+            margin:0;
+        }
+        
+        ul {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            list-style-type: none;
+            margin:auto 0;
+            padding:0;
+            overflow:hidden;
+            background-color:white;
+            position: fixed;
+            top:0;
+            width:100%;
+            border:1px solid black;
+        }
+        
+        li {
+            float:left;
+            border-right: 1px solid black;
+        }
+        
+        li a {
+            display:block;
+            color:black;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: brown;
+        }
+        li a:first-child {
+            border-left: 1px solid black;
+        }
+        
+        .active {
+            color:orange;
+        }
+        h1 {
+            padding-left:20px;
+            padding-top:20px;
+            font-size:2.5em;
+        }
+        p {
+            padding-left:30px;
+            font-size: 1.5em;
+        }
+        #logo {
+            padding:100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            max-width: 100%;
+        }
+        .switch {
+            background-image: url(demo-still.png);
+            width: 749px;
+            height: 630px;
+        }
+        .switch:hover {
+            background-image: url(demo-motion.gif);
+            width:640px;
+            height: 480px;
+        }
+        
+        .phone {
+            float:left;
+            
+            
+        }
+    
+    
+    </style>
+    
+    </head>
+
+<body>
+    <main>
+        <div style="padding:20px;margin-top:30px;background-color:orange;height: 1500px;">
+            <img id="logo" src="logo.png">
+        <h1 style="text-decoration-line: underline">Tommorows Games Made Today!</h1>
+        <p>Hover over me for motion!</p>
+            <div class="switch"></div>
+            <img class="phone" src="phone-image.png">
+    </div>
+    </main>
+    
+    </body>
+
+
+
+
+
+
+<footer>
+    
+    </footer>
+
+</html>
