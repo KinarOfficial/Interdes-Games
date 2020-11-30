@@ -32,6 +32,7 @@
             top:0;
             width:100%;
             border:1px solid black;
+            z-index: 1;
         }
         
         li {
@@ -93,6 +94,24 @@
             width:358px;
             height:366px;
         }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width:120px;
+            background-color: black;
+            color:#fff;
+            text-align: center;
+            padding:5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
     </style>
     
     </head>
@@ -101,17 +120,22 @@
     <main>
         <div style="padding:20px;margin-top:30px;background-color:orange;height: 1500px;">
             <img id="logo" src="logo.png" alt="Interdes Games Logo">
-        <h1 style="font-size:3em;padding:10px; width:40%;"class="animate__animated animate__bounce">Tommorows Games Made Today!</h1>
+            
+        <h1 style="font-size:3em; padding:10px; width:40%;" class="animate__animated animate__bounce">Tommorows Games Made Today!</h1>
         <h1 style="text-decoration-line: underline";>Webpage Content Title Here</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mollis ex. Sed dignissim blandit elementum. Vivamus non nibh eget tellus pretium tristique. Phasellus et lectus quam. Vestibulum maximus at augue vitae consequat. Nullam fringilla nibh lacus, sit amet aliquam odio molestie a. Sed ipsum lacus, auctor malesuada nulla at, porttitor cursus est. Duis porttitor hendrerit efficitur. Nullam sed odio ut libero condimentum aliquet eu egestas tortor. </p>
         <p>Hover over me for motion!</p>
             <div class="switch" alt="Offbrand mario moving towards a block"></div>
-            <img class="phone" src="phone-image.png"alt="Mobile phone with Gamescreen">
+            
+            <div class="tooltip">
+                <span class="tooltiptext">Find us on mobile!</span>
+                <img class="phone" src="phone-image.png"alt="Mobile phone with Gamescreen"></div>
         </div>
     </main>
     
 </body>
 <footer>
-    
+    <p style="text-align: center;">&#169; Interdes Games 2020</p>
     </footer>
 
 </html>
